@@ -9,9 +9,9 @@ with open('dom_nondom.csv') as file_csv:
     reader_csv = reader(file_csv, delimiter=',')
     for row in reader_csv:
         if row[0] != 'NO':
-            if row[1] == '  Domestik':
+            if row[1] == 'Domestik':
                 jenis_penerbangan_dom.append(row)
-            elif row[1] == '  Non-domestik':
+            elif row[1] == 'Non-domestik':
                 jenis_penerbangan_nondom.append(row)
 
 
