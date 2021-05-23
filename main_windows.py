@@ -3,11 +3,16 @@ from tkinter import ttk
 from PIL import Image, ImageTk
 from csv import *
 
-jenis_penerbangan = []
+jenis_penerbangan_dom = []
+jenis_penerbangan_nondom = []
 with open('dom_nondom.csv') as file_csv:
     reader_csv = reader(file_csv, delimiter=',')
     for row in reader_csv:
-        jenis_penerbangan.append(row)
+        if row[0] != 'NO':
+            if row[1] == '  Domestik':
+                jenis_penerbangan_dom.append(row)
+            elif row[1] == '  Non-domestik':
+                jenis_penerbangan_nondom.append(row)
 
 
 def frame_1(frame):
@@ -103,10 +108,17 @@ waktu_label = Label(input_frame, text='Kelas penerbangan').place(x=0, y=150)
 n = StringVar()
 m = StringVar()
 
+def ganti_list_tujuan(e):
+    if jenis_input.get() == 'Domestik':
+        tujuan_input['values'] = jenis_penerbangan_dom
+    elif jenis_input.get() == 'Non-domestik':
+        tujuan_input['values'] = jenis_penerbangan_nondom
+
 jenis_input = ttk.Combobox(input_frame, width=37, textvariable=n)
 jenis_input['values'] = ('Domestik',
                          'Non-domestik')
 jenis_input['state'] = 'readonly'
+jenis_input.bind('<<ComboboxSelected>>', ganti_list_tujuan)
 maskapai_input = Entry(input_frame, width=40, borderwidth=3)
 asal_input = Entry(input_frame, width=40, borderwidth=3)
 tujuan_input = ttk.Combobox(input_frame, width=37, textvariable=m)
