@@ -3,17 +3,26 @@ from tkinter import ttk
 from PIL import Image, ImageTk
 from csv import *
 
-jenis_penerbangan_dom = []
-jenis_penerbangan_nondom = []
+tujuan = []
 with open('dom_nondom.csv') as file_csv:
     reader_csv = reader(file_csv, delimiter=',')
     for row in reader_csv:
         if row[0] != 'NO':
-            if row[1] == 'Domestik':
-                jenis_penerbangan_dom.append(row)
-            elif row[1] == 'Non-domestik':
-                jenis_penerbangan_nondom.append(row)
+            tujuan.append(row)
 
+waktu = []
+with open('waktu_penerbangan.csv') as file_csv:
+    reader_csv = reader(file_csv, delimiter=',')
+    for row in reader_csv:
+        if row[0] != 'NO':
+            waktu.append(row)
+
+maskapai = []
+with open('data_maskapai.csv') as file_csv:
+    reader_csv = reader(file_csv, delimiter=',')
+    for row in reader_csv:
+        if row[0] != 'NO':
+            maskapai.append(row)
 
 def frame_1(frame):
     frame.tkraise()
@@ -99,36 +108,56 @@ tombol1 = Button(main_frame, text='Cek Data', width=10, command=cek_data1).place
 
 # frame 2, input frame
 Label(input_frame, text='On-Booking Site', font='Helvetica 15 bold').place(x=170, y=5)
-jenis_label = Label(input_frame, text='Jenis Penerbangan').place(x=0, y=50)
-tujuan_label = Label(input_frame, text='Tujuan').place(x=0, y=75)
-asal_label = Label(input_frame, text='Waktu keberangkatan').place(x=0, y=100)
-maskapai_label = Label(input_frame, text='Maskapai').place(x=0, y=125)
-waktu_label = Label(input_frame, text='Kelas penerbangan').place(x=0, y=150)
-
-n = StringVar()
-m = StringVar()
+Label(input_frame, text='Jenis Penerbangan').place(x=0, y=50)
+Label(input_frame, text='Tujuan').place(x=0, y=75)
+Label(input_frame, text='Waktu keberangkatan').place(x=0, y=100)
+Label(input_frame, text='Maskapai').place(x=0, y=125)
+Label(input_frame, text='Kelas penerbangan').place(x=0, y=150)
 
 def ganti_list_tujuan(e):
-    if jenis_input.get() == 'Domestik':
-        tujuan_input['values'] = jenis_penerbangan_dom
-    elif jenis_input.get() == 'Non-domestik':
-        tujuan_input['values'] = jenis_penerbangan_nondom
+    values = []
+    for row in tujuan:
+        if row[1] == jenis_input.get():
+            values.append(row[2])
+    tujuan_input['values'] = values
 
-jenis_input = ttk.Combobox(input_frame, width=37, textvariable=n)
-jenis_input['values'] = ('Domestik',
-                         'Non-domestik')
+def ganti_list_waktu_dan_maskapai(e):
+    values = []
+    for row in waktu:
+        if row[1] == tujuan_input.get():
+            values.append(row[2])
+            values.append(row[3])
+            values.append(row[4])
+    waktu_input['values'] = values
+    values = []
+    for row in maskapai:
+        if row[2] == tujuan_input.get():
+            values.append(row[1] + ' (rute ' + row[2] +')')
+    maskapai_input['values'] = values    
+
+jenis_input = ttk.Combobox(input_frame, width=37)
+jenis_input['values'] = ['Domestik', 'Non-domestik']
 jenis_input['state'] = 'readonly'
 jenis_input.bind('<<ComboboxSelected>>', ganti_list_tujuan)
-maskapai_input = Entry(input_frame, width=40, borderwidth=3)
-asal_input = Entry(input_frame, width=40, borderwidth=3)
-tujuan_input = ttk.Combobox(input_frame, width=37, textvariable=m)
+
+tujuan_input = ttk.Combobox(input_frame, width=37)
 tujuan_input['state'] = 'readonly'
-waktu_input = Entry(input_frame, width=40, borderwidth=3)
+tujuan_input.bind('<<ComboboxSelected>>', ganti_list_waktu_dan_maskapai)
+
+waktu_input = ttk.Combobox(input_frame, width=37)
+waktu_input['state'] = 'readonly'
+
+maskapai_input = ttk.Combobox(input_frame, width=37)
+maskapai_input['state'] = 'readonly'
+
+kelas_input = ttk.Combobox(input_frame, width=37)
+kelas_input['state'] = 'readonly'
+
 jenis_input.place(x=140, y=50)
 tujuan_input.place(x=140, y=75)
-asal_input.place(x=140, y=100)
+waktu_input.place(x=140, y=100)
 maskapai_input.place(x=140, y=125)
-waktu_input.place(x=140, y=150)
+kelas_input.place(x=140, y=150)
 
 Button(input_frame, text='Next', width=10, command=lambda: frame_1(main_frame)).place(x=140, y=175)
 

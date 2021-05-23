@@ -1,57 +1,57 @@
-NO,AIRLINES,TUJUAN,PRICE
-1,Garuda Indonesia,Solo,799
-2,Garuda Indonesia,Denpasar,1709000
-3,Garuda Indonesia,Makassar,2148000
-4,Garuda Indonesia,Samarinda,1863000
-5,Garuda Indonesia,Surabaya,919
-6,Garuda Indonesia,Singapura,2473000
-7,Garuda Indonesia,Hongkong,19466000
-8,Garuda Indonesia,Kuala Lumpur,2013000
-9,Lion Air,Solo,387
-10,Lion Air,Denpasar,1243000
-11,Lion Air,Makassar,1030000
-12,Lion Air,Samarinda,1279000
-13,Lion Air,Surabaya,689
-14,Lion Air,Singapura,0
-15,Lion Air,Hongkong,0
-16,Lion Air,Kuala Lumpur,2043000
-17,Batik Air,Solo,737
-18,Batik Air,Denpasar,1114000
-19,Batik Air,Makassar,1197000
-20,Batik Air,Samarinda,1305000
-21,Batik Air,Surabaya,714
-22,Batik Air,Singapura,0
-23,Batik Air,Hongkong,0
-24,Batik Air,Kuala Lumpur,2172000
-25,Citilink,Solo,827
-26,Citilink,Denpasar,1191000
-27,Citilink,Makassar,1451000
-28,Citilink,Samarinda,2280000
-29,Citilink,Surabaya,1180000
-30,Citilink,Singapura,0
-31,Citilink,Hongkong,0
-32,Citilink,Kuala Lumpur,0
-33,AirAsia,Solo,0
-34,AirAsia,Denpasar,575
-35,AirAsia,Makassar,0
-36,AirAsia,Samarinda,0
-37,AirAsia,Surabaya,486
-38,AirAsia,Singapura,0
-39,AirAsia,Hongkong,0
-40,AirAsia,Kuala Lumpur,0
-41,Singapore,Solo,0
-42,Singapore,Denpasar,0
-43,Singapore,Makassar,0
-44,Singapore,Samarinda,0
-45,Singapore,Surabaya,0
-46,Singapore,Singapura,1254000
-47,Singapore,Hongkong,0
-48,Singapore,Kuala Lumpur,1478000
-49,Cathay Pasific,Solo,0
-50,Cathay Pasific,Denpasar,0
-51,Cathay Pasific,Makassar,0
-52,Cathay Pasific,Samarinda,0
-53,Cathay Pasific,Surabaya,0
-54,Cathay Pasific,Singapura,0
-55,Cathay Pasific,Hongkong,3827000
-56,Cathay Pasific,Kuala Lumpur,0
+NO,AIRLINES,RUTE,PRICE
+1,Garuda Indonesia,Jakarta - Solo,799
+2,Garuda Indonesia,Jakarta - Denpasar,1709000
+3,Garuda Indonesia,Jakarta - Makassar,2148000
+4,Garuda Indonesia,Jakarta - Samarinda,1863000
+5,Garuda Indonesia,Jakarta - Surabaya,919
+6,Garuda Indonesia,Jakarta - Singapura,2473000
+7,Garuda Indonesia,Jakarta - Hongkong,19466000
+8,Garuda Indonesia,Jakarta - Kuala Lumpur,2013000
+9,Lion Air,Jakarta - Solo,387
+10,Lion Air,Jakarta - Denpasar,1243000
+11,Lion Air,Jakarta - Makassar,1030000
+12,Lion Air,Jakarta - Samarinda,1279000
+13,Lion Air,Jakarta - Surabaya,689
+14,Lion Air,Jakarta - Singapura,0
+15,Lion Air,Jakarta - Hongkong,0
+16,Lion Air,Jakarta - Kuala Lumpur,2043000
+17,Batik Air,Jakarta - Solo,737
+18,Batik Air,Jakarta - Denpasar,1114000
+19,Batik Air,Jakarta - Makassar,1197000
+20,Batik Air,Jakarta - Samarinda,1305000
+21,Batik Air,Jakarta - Surabaya,714
+22,Batik Air,Jakarta - Singapura,0
+23,Batik Air,Jakarta - Hongkong,0
+24,Batik Air,Jakarta - Kuala Lumpur,2172000
+25,Citilink,Jakarta - Solo,827
+26,Citilink,Jakarta - Denpasar,1191000
+27,Citilink,Jakarta - Makassar,1451000
+28,Citilink,Jakarta - Samarinda,2280000
+29,Citilink,Jakarta - Surabaya,1180000
+30,Citilink,Jakarta - Singapura,0
+31,Citilink,Jakarta - Hongkong,0
+32,Citilink,Jakarta - Kuala Lumpur,0
+33,AirAsia,Jakarta - Solo,0
+34,AirAsia,Jakarta - Denpasar,575
+35,AirAsia,Jakarta - Makassar,0
+36,AirAsia,Jakarta - Samarinda,0
+37,AirAsia,Jakarta - Surabaya,486
+38,AirAsia,Jakarta - Singapura,0
+39,AirAsia,Jakarta - Hongkong,0
+40,AirAsia,Jakarta - Kuala Lumpur,0
+41,Singapore,Jakarta - Solo,0
+42,Singapore,Jakarta - Denpasar,0
+43,Singapore,Jakarta - Makassar,0
+44,Singapore,Jakarta - Samarinda,0
+45,Singapore,Jakarta - Surabaya,0
+46,Singapore,Jakarta - Singapura,1254000
+47,Singapore,Jakarta - Hongkong,0
+48,Singapore,Jakarta - Kuala Lumpur,1478000
+49,Cathay Pasific,Jakarta - Solo,0
+50,Cathay Pasific,Jakarta - Denpasar,0
+51,Cathay Pasific,Jakarta - Makassar,0
+52,Cathay Pasific,Jakarta - Samarinda,0
+53,Cathay Pasific,Jakarta - Surabaya,0
+54,Cathay Pasific,Jakarta - Singapura,0
+55,Cathay Pasific,Jakarta - Hongkong,3827000
+56,Cathay Pasific,Jakarta - Kuala Lumpur,0
