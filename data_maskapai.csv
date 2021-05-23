@@ -1,0 +1,57 @@
+NO,	AIRLINES,	TUJUAN,	PRICE
+1,	Garuda Indonesia,	Solo,	799.000
+2,	Garuda Indonesia,	Denpasar,	1.709.000
+3,	Garuda Indonesia,	Makassar,	2.148.000
+4,	Garuda Indonesia,	Samarinda,	1.863.000
+5,	Garuda Indonesia,	Surabaya,	919.000
+6,	Garuda Indonesia,	Singapura,	2.473.000
+7,	Garuda Indonesia,	Hongkong,	19.466.000
+8,	Garuda Indonesia,	Kuala Lumpur,	2.013.000
+9,	Lion Air,	Solo,	387.000
+10,	Lion Air,	Denpasar,	1.243.000
+11,	Lion Air,	Makassar,	1.030.000
+12,	Lion Air,	Samarinda,	1.279.000
+13,	Lion Air,	Surabaya,	689.000
+14,	Lion Air,	Singapura,	0
+15,	Lion Air,	Hongkong,	0
+16,	Lion Air,	Kuala Lumpur,	2.043.000
+17,	Batik Air,	Solo,	737.000
+18,	Batik Air,	Denpasar,	1.114.000
+19,	Batik Air,	Makassar,	1.197.000
+20,	Batik Air,	Samarinda,	1.305.000
+21,	Batik Air,	Surabaya,	714.000
+22,	Batik Air,	Singapura,	0
+23,	Batik Air,	Hongkong,	0
+24,	Batik Air,	Kuala Lumpur,	2.172.000
+25,	Citilink,	Solo,	827.000
+26,	Citilink,	Denpasar,	1.191.000
+27,	Citilink,	Makassar,	1.451.000
+28,	Citilink,	Samarinda,	2.280.000
+29,	Citilink,	Surabaya,	1.180.000
+30,	Citilink,	Singapura,	0
+31,	Citilink,	Hongkong,	0
+32,	Citilink,	Kuala Lumpur,	0
+33,	AirAsia,	Solo,	0
+34,	AirAsia,	Denpasar,	575.000
+35,	AirAsia,	Makassar,	0
+36,	AirAsia,	Samarinda,	0
+37,	AirAsia,	Surabaya,	486.000
+38,	AirAsia,	Singapura,	0
+39,	AirAsia,	Hongkong,	0
+40,	AirAsia,	Kuala Lumpur,	0
+41,	Singapore,	Solo,	0
+42,	Singapore,	Denpasar,	0
+43,	Singapore,	Makassar,	0
+44,	Singapore,	Samarinda,	0
+45,	Singapore,	Surabaya,	0
+46,	Singapore,	Singapura,	1.254.000
+47,	Singapore,	Hongkong,	0
+48,	Singapore,	Kuala Lumpur,	1.478.000
+49,	Cathay Pasific,	Solo,	0
+50,	Cathay Pasific,	Denpasar,	0
+51,	Cathay Pasific,	Makassar,	0
+52,	Cathay Pasific, Samarinda,  0
+53, Cathay Pasific, Surabaya,   0
+54, Cathay Pasific, Singapura,  0
+55, Cathay Pasific, Hongkong,   3.827.000
+56, Cathay Pasific, Kuala Lumpur,   0
